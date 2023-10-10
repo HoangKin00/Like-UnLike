@@ -1,0 +1,22 @@
+.admin {
+  display: flex;
+  justify-content: space-between;
+  background: #f5f5f5;
+  padding: 30px;
+  &__list {
+    width: 59%;
+  }
+  &__view {
+    width: 39%;
+  }
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+    gap: 20px;
+    &__list {
+      width: 100%;
+    }
+    &__view {
+      width: 100%;
+    }
+  }
+}
