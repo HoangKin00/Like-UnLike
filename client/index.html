@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css">
+    <link rel="stylesheet" href="media/sass/main.min.css">
+</head>
+
+<body>
+    <div class="home">
+        <div class="home__view">
+            <img src="media/img/" alt="">
+            <span>278 lượt đọc</span>
+        </div>
+        <div class="home__vote">
+            <div class="home__icon">
+                <div class="home__img">
+                    <img src="media/img/like.svg" alt="" id="likeImg">
+                </div>
+                <div class="home__img">
+                    <img src="media/img/unlike.svg" alt="" id="unlikeImg">
+                </div>
+            </div>
+            <span>Bài viết hữu ích</span>
+        </div>
+    </div>
+
+    <script>
+        const likeImg = document.getElementById('likeImg');
+        const unlikeImg = document.getElementById('unlikeImg');
+
+        likeImg.addEventListener('mouseenter', function () {
+            likeImg.setAttribute('src', 'media/img/like-hover.svg');
+        });
+
+        likeImg.addEventListener('mouseleave', function () {
+            likeImg.setAttribute('src', 'media/img/like.svg');
+        });
+
+        unlikeImg.addEventListener('mouseenter', function () {
+            unlikeImg.setAttribute('src', 'media/img/unlike-hover.svg');
+        });
+
+        unlikeImg.addEventListener('mouseleave', function () {
+            unlikeImg.setAttribute('src', 'media/img/unlike.svg');
+        });
+    </script>
+</body>
+
+</html>
