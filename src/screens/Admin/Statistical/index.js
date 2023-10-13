@@ -5,19 +5,19 @@ const Overview = () => {
   const data = [
     {
       class: viewStyles["views__icon1"],
-      name: `Lượt views`,
+      name: `Lượt views trung bình`,
       background: `#ec7c2c`,
       number: 70
     },
     {
       class: viewStyles["views__icon2"],
-      name: `Lượt thích`,
+      name: `Lượt thích trung bình`,
       background: `#7dce45`,
       number: 50
     },
     {
       class: viewStyles["views__icon3"],
-      name: `Lượt hủy`,
+      name: `Lượt hủy trung bình`,
       background: `#999`,
       number: 17
     }
